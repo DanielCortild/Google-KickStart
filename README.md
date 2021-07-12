@@ -1,12 +1,15 @@
 # Google Kick Start
 
 ## Practice Round Solutions
-1. 2018
+<details>
+<summary>1. 2018</summary>
   * Round A
     * Question 1 => SOLVED
     * Question 2 => 
     * Question 3 => 
-1. 2019
+</details>
+<details>
+<summary>1. 2019</summary>
   * Round A
     * Question 1 => SOLVED
     * Question 2 => 
@@ -15,7 +18,9 @@
     * Question 1 => ONLY TEST 1
     * Question 2 => 
     * Question 3 => 
-1. 2020
+</details>
+<details>
+<summary>1. 2020</summary>
   * Round A
     * Question 1 => SOLVED
     * Question 2 => SOLVED
@@ -56,7 +61,9 @@
     * Question 2 => ONLY TEST 1
     * Question 3 => 
     * Question 4 => 
-1. 2021
+</details>
+<details>
+<summary>1. 2021</summary>
   * Round A
     * Question 1 => SOLVED
     * Question 2 => SOLVED
@@ -77,7 +84,7 @@
     * Question 2 => ONLY TEST 1
     * Question 3 => 
     * Question 4 => SOLVED
-
+</details>
 
 ## Competition Rounds
 | Round  | Solved Problems | Points | Place |
