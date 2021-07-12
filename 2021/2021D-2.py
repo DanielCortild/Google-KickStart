@@ -1,32 +1,45 @@
 """
-Google Kick Start - Round D 2021 - Q2 [ONLY TEST 1]
+Google Kick Start - Round D 2021 - Q2 [SOLVED]
 Daniel Cortild - 11/07/2021
 """
 
-import numpy as np
-import heapq
-
 for T in range(int(input())):
-  N, C = list(map(int, input().split()))
-  dic = {}
+    N, C = list(map(int, input().split()))
 
-  L, R = np.empty(N), np.empty(N)
+    M = {}
 
-  for i in range(N):
-    l, r = list(map(int, input().split()))
-    L[i] = l
-    R[i] = r
+    for i in range(N):
+        L, R = list(map(int, input().split()))
+        if L + 1 not in M:
+            M[L + 1] = 1
+        else:
+            M[L + 1] += 1
+        if R not in M:
+            M[R] = -1
+        else:
+            M[R] -= 1
 
-  l_min = int(np.min(L))
-  r_max = int(np.max(R))
+    K = sorted(M.keys())
 
-  x = np.zeros(r_max-l_min+1)
+    nb_cuts = 0
+    key_prev, key_curr = K[0:2]
+    A = {}
 
-  for i in range(len(L)):
-    x[int(L[i]+1-l_min)] += 1
-    x[int(R[i]-l_min)] -= 1
+    for i in range(1, len(K)):
+        key_prev, key_curr = K[i - 1:i + 1]
+        nb_cuts += M[key_prev]
+        if nb_cuts not in A:
+            A[nb_cuts] = 0
+        A[nb_cuts] += key_curr - key_prev
 
-  x = np.cumsum(x)
-  cuts = int(N + np.sum(heapq.nlargest(C, x)))
+    cuts = N
+    A2 = list(sorted(A.keys()))[::-1]
+    idx = 0
 
-  print(f"Case #{T+1}: {cuts}")
+    while C > 0 and idx < len(A2):
+        mi = A2[idx]
+        cuts += min(C, A[mi]) * mi
+        C -= min(C, A[mi])
+        idx += 1
+
+    print(f"Case #{T+1}: {cuts}")
