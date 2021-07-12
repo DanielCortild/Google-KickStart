@@ -72,10 +72,18 @@
     * Question 2 => SOLVED
     * Question 3 => 
     * Question 4 => SOLVED
+  * Round D
+    * Question 1 => SOLVED
+    * Question 2 => ONLY TEST 1
+    * Question 3 => 
+    * Question 4 => SOLVED
 
 
 ## Competition Rounds
-1. 2020, Round G. Solved Full 1, Full 2, Test 1 of 3 and Test 1 of 4. 43 Points, Place 2160.
-1. 2021, Round A. Solved Full 1, Test 1 of 2 and Test 1 of 3. 29 Points, Place 5146.
-1. 2021, Round B. Solved Full 1 and 3. 42 Points, Place 1406.
-1. 2021, Round C. Solved Test 1 of 1 and Full 2. 25 Points, Place Unknown.
+| Round  | Solved Problems | Points | Place |
+|--------|-----------------|--------|-------|
+| 2020 G | 1, 2, 3.1, 4.1  | 43     | 2160  |
+| 2021 A | 1, 2.1, 3.1     | 29     | 5146  |
+| 2021 B | 1, 3            | 42     | 1406  |
+| 2021 C | 1.1, 2          | 25     | 3169  |
+| 2021 D | 1, 2.1          | 23     | 3111  |

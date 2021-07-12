@@ -4,9 +4,7 @@ Daniel Cortild - 21/03/2021
 """
 
 for T in range(int(input())):
-  N, P = list(map(int, input().split()))
-  S = sorted(list(map(int, input().split())))
+    N, P = list(map(int, input().split()))
+    S = sorted(list(map(int, input().split())))
 
-  
-
-  print(f"Case #{T+1}: {trainingHours}")
+    print(f"Case #{T+1}: {}")
