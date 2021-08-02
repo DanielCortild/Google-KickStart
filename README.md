@@ -103,7 +103,7 @@
     <li>Round B</li>
     <ul>
       <li>Question 1 => SOLVED</li>
-      <li>Question 2 => </li>
+      <li>Question 2 => SOLVED</li>
       <li>Question 3 => SOLVED</li>
       <li>Question 4 => </li>
     </ul>
@@ -111,7 +111,7 @@
     <ul>
       <li>Question 1 => SOLVED</li>
       <li>Question 2 => SOLVED</li>
-      <li>Question 3 => </li>
+      <li>Question 3 => SOLVED</li>
       <li>Question 4 => SOLVED</li>
     </ul>
     <li>Round D</li>
