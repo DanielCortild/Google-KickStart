@@ -1,6 +1,6 @@
 """
 Google Kick Start - Round C 2021 - Q3 [SOLVED]
-Daniel Cortild - 23/05/2021
+Daniel Cortild - 02/08/2021
 """
 
 ## PRELIMINARY CODE TO FIND THE STRATEGIES
