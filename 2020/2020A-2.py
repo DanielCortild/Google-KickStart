@@ -1,5 +1,5 @@
 """
-Google Kick Start - Round A 2020 - Q2
+Google Kick Start - Round A 2020 - Q2 [SOLVED]
 Daniel Cortild - 17/10/2020
 """
 

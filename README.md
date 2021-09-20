@@ -10,6 +10,12 @@
       <li>Question 2 => </li>
       <li>Question 3 => </li>
     </ul>
+    <li>Round B</li>
+    <ul>
+      <li>Question 1 => SOLVED</li>
+      <li>Question 2 => </li>
+      <li>Question 3 => </li>
+    </ul>
   </ul>
 </details>
 <details>
@@ -23,7 +29,7 @@
     </ul>
     <li>Round B</li>
     <ul>
-      <li>Question 1 => TEST 1</li>
+      <li>Question 1 => SOLVED</li>
       <li>Question 2 => </li>
       <li>Question 3 => </li>
     </ul>
@@ -121,6 +127,20 @@
       <li>Question 3 => TEST 1</li>
       <li>Question 4 => SOLVED</li>
     </ul>
+    <li>Round E</li>
+    <ul>
+      <li>Question 1 => </li>
+      <li>Question 2 => </li>
+      <li>Question 3 => </li>
+      <li>Question 4 => </li>
+    </ul>
+    <li>Round F</li>
+    <ul>
+      <li>Question 1 => SOLVED</li>
+      <li>Question 2 => TEST 1</li>
+      <li>Question 3 => </li>
+      <li>Question 4 => </li>
+    </ul>
   </ul>
 </details>
 
@@ -132,3 +152,4 @@
 | 2021 B | 1, 3            | 42     | 1406  |
 | 2021 C | 1.1, 2          | 25     | 3169  |
 | 2021 D | 1, 2.1          | 23     | 2822  |
+| 2021 F | 1, 2.1          | 19     | 1661  |

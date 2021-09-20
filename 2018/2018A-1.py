@@ -1,19 +1,44 @@
 """
-Google Kick Start - Round A 2018 - Q1 [RE]
-Daniel Cortild - 17/10/2020
+Google Kick Start - Round A 2018 - Q1 [SOLVED]
+Daniel Cortild - 02/08/2021
 """
 
-for T in range(int(input())):
-  N = input()
-  while len(N):
-    if int(N[0]) % 2 == 0:
-      continue
-    if 10**(len(N)+1)-int(N[1:]) <= int(N[1:])+1:
-      sol += 10**(len(N)+1)-int(N[1:])
+def lastGood(n):
+  n_list = [int(c) for c in str(n)]
+  for (i, k) in enumerate(n_list):
+    if k % 2 == 1:
+      n_list[i] -= 1
+      for j in range(len(n_list[i+1:])):
+        n_list[i + j + 1] = 8
       break
-    sol += int(N[1:])+1
-    N =
-  sol = 0
+  return int(''.join(map(str, n_list)))
 
+def nextGood(n):
+  n_list = [int(c) for c in str(n)]
+  start = 0
+  for (i, k) in enumerate(n_list):
+    if k % 2 == 1:
+      if n_list[i] == 9:
+        n_list[i] = 0
+        ij = i
+        while ij > 0 and n_list[ij-1] == 8:
+          n_list[ij-1] = 0
+          ij -= 1
+        if ij == 0:
+          start = 2
+        else:
+          n_list[ij-1] += 2
+      else:
+        n_list[i] += 1
+      for j in range(len(n_list[i+1:])):
+        n_list[i + j + 1] = 0
+      break
+  return int(''.join([str(start), *map(str, n_list)]))
 
-  print(f"Case #{T+1}: {sol}")
+for T in range(int(input())):
+  N = int(input())
+  
+  A = lastGood(N)
+  B = nextGood(N)
+
+  print(f"Case #{T+1}: {min(N-A, B-N)}")
